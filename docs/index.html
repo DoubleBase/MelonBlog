@@ -8,8 +8,8 @@
   <meta name="description" content="Description">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/vue.css">
-  <link rel="stylesheet" href="/assets/css/gitalk.css">
+  <link rel="stylesheet" href="./assets/css/vue.css">
+  <link rel="stylesheet" href="./assets/css/gitalk.css">
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -25,16 +25,16 @@
   <div id="app"></div>
   <script>
     var gitalkConfig = {
-      clientID: '4a657aa4ae6c0f1862a1',
-      clientSecret: '94793d5bac0c884a8798ea941f7c5bc9fb004720',
-      repo: 'DoubleBase.github.io',
+      clientID: '',
+      clientSecret: '',
+      repo: 'https://github.com/DoubleBase',
       owner: 'DoubleBase',
       admin: ["DoubleBase"],
       distractionFreeMode: false
     };
     window.$docsify = {
       name: 'Melon',
-      repo: 'https://github.com/DoubleBase/DoubleBase.github.io',
+      repo: 'https://github.com/DoubleBase',
       auto2top: true,
       coverpage: true,
       loadSidebar: true,
@@ -62,8 +62,8 @@
         isExpected: true
       },
       pagination: {
-        previousText: 'PREVIOUS',
-        nextText: 'NEXT',
+        previousText: '上一篇',
+        nextText: '下一篇',
         crossChapter: true
       },
       plugins: [
@@ -97,15 +97,18 @@
    
   </script>
 
-  <script src="/assets/js/md5.js"></script>
-  <script src="/assets/js/docsify.min.js"></script>
-  <script src="/assets/js/gitalk.min.js"></script>
+  <script src="./assets/js/md5.js"></script>
+  <script src="./assets/js/docsify.min.js"></script>
+  <script src="./assets/js/gitalk.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-  <script src="/assets/js/docsify-pagination.min.js"></script>
-  <script src="/assets/js/zoom-image.js"></script>
-  <script src="/assets/js/prism-bash.js"></script>
-  <script src="/assets/js/prism-java.min.js"></script>
-  <script src="/assets/js/countable.js"></script>
+  <script src="./assets/js/docsify-pagination.min.js"></script>
+  <script src="./assets/js/zoom-image.js"></script>
+  <script src="./assets/js/prism-bash.js"></script>
+  <script src="./assets/js/prism-java.min.js"></script>
+  <script src="./assets/js/countable.js"></script>
+  <!-- 复制到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+    
 </body>
 
 </html>
