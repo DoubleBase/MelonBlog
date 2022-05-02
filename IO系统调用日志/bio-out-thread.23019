@@ -1,0 +1,30 @@
+set_robust_list(0x7fc475b0a9e0, 24)     = 0
+gettid()                                = 23019
+rt_sigprocmask(SIG_BLOCK, NULL, [QUIT], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT ILL BUS FPE SEGV USR2 TERM], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [QUIT], NULL, 8) = 0
+futex(0x7fc48800a554, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7fc48800a550, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+futex(0x7fc48800a528, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x7fc440000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fc440000000
+mprotect(0x7fc440000000, 135168, PROT_READ|PROT_WRITE) = 0
+sched_getaffinity(23019, 32, [0, 1])    = 32
+sched_getaffinity(23019, 32, [0, 1])    = 32
+mmap(0x7fc475a0a000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc475a0a000
+mprotect(0x7fc475a0a000, 12288, PROT_NONE) = 0
+lseek(3, 29961031, SEEK_SET)            = 29961031
+read(3, "PK\3\4\n\0\0\10\0\0\26\273kP\340\0161\236E\3\0\0E\3\0\0\27\0\0\0", 30) = 30
+lseek(3, 29961084, SEEK_SET)            = 29961084
+read(3, "\312\376\272\276\0\0\0004\0-\1\0\24()Ljava/lang/Object"..., 837) = 837
+lseek(3, 29962814, SEEK_SET)            = 29962814
+read(3, "PK\3\4\n\0\0\10\0\0\30\273kP\262\217^g\257\r\0\0\257\r\0\0 \0\0\0", 30) = 30
+lseek(3, 29962876, SEEK_SET)            = 29962876
+read(3, "\312\376\272\276\0\0\0004\0\240\10\0\6\10\0\7\10\0\26\10\0\31\10\0:\1\0\22 buf"..., 3503) = 3503
+futex(0x7fc4880daa54, FUTEX_WAIT_BITSET_PRIVATE, 1, {tv_sec=20353, tv_nsec=964480773}, 0xffffffff) = -1 ETIMEDOUT (连接超时)
+futex(0x7fc4880daa28, FUTEX_WAKE_PRIVATE, 1) = 0
+recvfrom(6, "test\n", 8192, 0, NULL, NULL) = 5
+ioctl(6, FIONREAD, [0])                 = 0
+write(1, "Thread-0 readLine data : test", 29) = 29
+write(1, "\n", 1)                       = 1
+futex(0x7fc4880daa54, FUTEX_WAIT_BITSET_PRIVATE, 1, {tv_sec=22990, tv_nsec=578213959}, 0xffffffff) = -1 ETIMEDOUT (连接超时)
+futex(0x7fc4880daa28, FUTEX_WAKE_PRIVATE, 1) = 0
+recvfrom(6, 
